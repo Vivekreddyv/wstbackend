@@ -13,6 +13,7 @@ app.use(express.json())
 app.use('/api',require('./routes/signup.js'))
 app.use('/api',require('./routes/login.js'))
 app.use('/api',require('./routes/productsadd.js'))
+app.use('/api',require('./routes/productsdata.js'))
 
 app.listen(PORT,()=>{
     console.log(`server is listening to ${PORT}`)
