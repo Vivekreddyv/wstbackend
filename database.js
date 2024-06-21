@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongodbURL = "mongodb+srv://WingSpanTrade:WingSpanTrade8797@cluster0.isrvdlj.mongodb.net/WingSpanTrade?retryWrites=true&w=majority";
+const mongodbURL = process.env.mongodbURI;
 
 const mongodb = async () => {
     try {
